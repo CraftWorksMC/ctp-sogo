@@ -7,10 +7,8 @@
 
 ## 📷 Preview
 
-<details>
-<summary>🌺 Macchiato</summary>
+🌺 Macchiato
 <img src="assets/macchiato_preview.png"/>
-</details>
 
 ## ⬇️ Usage
 

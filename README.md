@@ -14,8 +14,7 @@
 
 
 1. copy CSS file to mailcow server `data/conf/sogo/macchiato.css`
-2. edit `data/conf/sogo/sogo.conf` and set `SOGoUIxDebugEnabled = NO;`
-3. append/create `docker-compose.override.yml` with:
+2. append/create `docker-compose.override.yml` with:
 ```
 version: '2.1'
 
@@ -25,14 +24,14 @@ services:
       - ./data/conf/sogo/macchiato.css:/usr/lib/GNUstep/SOGo/WebServerResources/css/theme-default.css:z
 ```
 
-4. Run:
+3. Run:
 ```
-docker compose up -d
+sudo docker compose up -d
 ```
 
-12. Run:
+4. Run:
 ```
-docker compose restart memcached-mailcow
+sudo docker compose restart memcached-mailcow sogo-mailcow
 ```
 
 <p align="center">

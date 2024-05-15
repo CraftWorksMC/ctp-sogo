@@ -13,7 +13,7 @@
 ## ⬇️ Usage
 
 
-1. copy CSS file to mailcow server `data/conf/sogo/custom-theme.css`
+1. copy CSS file to mailcow server `data/conf/sogo/macchiato.css`
 2. edit `data/conf/sogo/sogo.conf` and set `SOGoUIxDebugEnabled = NO;`
 3. append/create `docker-compose.override.yml` with:
 ```
@@ -22,7 +22,7 @@ version: '2.1'
 services:
   sogo-mailcow:
     volumes:
-      - ./data/conf/sogo/custom-theme.css:/usr/lib/GNUstep/SOGo/WebServerResources/css/theme-default.css:z
+      - ./data/conf/sogo/macchiato.css:/usr/lib/GNUstep/SOGo/WebServerResources/css/theme-default.css:z
 ```
 
 4. Run:
